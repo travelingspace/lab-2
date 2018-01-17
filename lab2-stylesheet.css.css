@@ -3,6 +3,8 @@
     background-size:cover;
     color: white;
     text-shadow: 2px 2px black;
+    text-align:center !important;
+    align-content:center;
 }
 
 h4{
