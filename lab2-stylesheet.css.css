@@ -1,0 +1,10 @@
+﻿.jumbotron{
+    background-image:url(images/mountains-water.jpg);
+    background-size:cover;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+h4{
+    font-weight:bold;
+}
