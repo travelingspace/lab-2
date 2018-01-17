@@ -1,14 +1,20 @@
 ﻿.jumbotron{
-    background-image:url(images/mountains-water.jpg);
-    background-size:cover;
+    background-color:dodgerblue;
     color: white;
     text-align:center;
 }
 
 .jumbotron h1 {
     text-shadow: 2px 2px black;
+    font-family: 'Century Gothic';
 }
 
-h4{
-    font-weight:bold;
+h2 {
+    color:midnightblue;
+    font-family:'Century Gothic';
+}
+
+pre {
+    background-color:midnightblue;
+    color:whitesmoke;
 }
