@@ -53,21 +53,16 @@
                 <pre>
                     <code>
                         public static class ConnectionDB
-
                         {
 
                             public static SqlConnection GetConnection()
-
                             {
-
                                 string connectionString =
                                 "Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|" +
                                 "\\ExpenseItems.mdf;Integrated Security=True";
                                 SqlConnection connection = new SqlConnection(connectionString);
                                 return connection;
-
                             }
-
                         }
                     </code>
                 </pre>
@@ -76,10 +71,15 @@
                 <p>Expense Item Partial Class Using Form Passed Variables:</p>
                 <pre>
                     <code>
-                        //***Constructor that takes 8 arguments to assign all properties for Expense Item object.
-                        public ExpenseItem (string date1, string description1, string miles1, string expenseType1,
-                        string expenseCode1, string rate1, string totalExpense1, string mileageTotal1, System.Drawing.Image receiptImage1)
+                        //***Constructor that takes 8 arguments to 
+                        //***assign all properties for Expense Item object.
 
+                        public ExpenseItem (string date1, 
+                            string description1, string miles1, 
+                            string expenseType1, string expenseCode1, 
+                            string rate1, string totalExpense1, 
+                            string mileageTotal1, 
+                            System.Drawing.Image receiptImage1)
                         {
                             date = date1;
                             description = description1;
@@ -91,164 +91,11 @@
                             mileageTotal = mileageTotal1;
                             receiptImage = receiptImage1;
                         }
-                    
                     </code>
                 </pre>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-                <!--==============================================================-->
-
-                <h1>My first Bootstrap page</h1>
-
-                <br />
-                <br />
-
-                <h4>Glyphicons (icons)</h4>
-                <p>
-                    Hello, bootstrap!: leaf glyph----
-                    <span class="glyphicon glyphicon-leaf"></span>
-                </p>
-
-
-                <br />
-                <br />
-
-                <h4>Buttons</h4>
-                <br />
-                <button type="button" class="btn btn-danger">Danger class</button>
-                <button type="button" class="btn btn-default">Default class</button>
-                <button type="button" class="btn btn-info">Info class</button>
-                <button type="button" class="btn btn-success">Success class</button>
-                <button type="button" class="btn btn-primary">Primary class</button>
-                <button type="button" class="btn btn-warning">Warning class</button>
-                <br />
-                <br />
-                <button type="button" class="btn btn-primary btn-lg">Large btn</button>
-                <button type="button" class="btn btn-primary btn-md">Medium btn</button>
-                <button type="button" class="btn btn-primary btn-sm">Small btn</button>
-                <button type="button" class="btn btn-primary btn-xs">Extra Small btn</button>
-
-                <br />
-                <br />
-
-                <h4>Drop-down menu</h4>
-                <p>
-                    A dropdown menu displays a list of links that expand from a button.
-                    Links can be on the same page, same site, or external.
-                    Bootstrap created this dropdown from a HTML button element, and an unordered list of a link elements.
-                </p>
-
-                <P>Select an option from the dropdown menu to go to Wikipedia page for that animal.</P>
-
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="animaldropdown" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="true">
-
-                        Animal      <!--The dropdown menu text -->
-                        <span class="caret"></span>   <!-- Add this for the down arrow icon -->
-
-                    </button>
-
-                    <ul class="dropdown-menu" aria-labelledby="animaldropdown">
-                        <li><a href="https://en.wikipedia.org/wiki/cat">Cats</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/bird">Birds</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/rabbit">Rabbits</a></li>
-                    </ul>
-                </div>
-
-
-                <br />
-                <br />
-                <h4>Navigation Tabs</h4>
-                <!-- Navigation tabs -->
-
-                <p>
-                    Bootstrap turns unordered list elements into tabs.
-                    However, to make the tabs do anything, you'll need some JavaScript.
-                </p>
-
-                <!--You have to have the a tag to make Bootstrap display the list items as tabs-->
-
-                <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a href="#cats" aria-controls="cats" role="tab" data-toggle="tab">Cats</a></li>
-                    <li role="presentation"><a href="#birds" aria-controls="birds" role="tab" data-toggle="tab">Birds</a></li>
-                    <li role="presentation"><a href="#rabbits" aria-controls="rabbits" role="tab" data-toggle="tab">Rabbits</a></li>
-                </ul>
-
-                <!-- The tab panes for each tab. Bootstrap's JavaScript uses the attributes of the
-        li elements to display the correct tab panel when a tab is clicked.  -->
-
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="cats">A domestic animal that says 'meow'.</div>
-                    <div role="tabpanel" class="tab-pane" id="birds">Birds are descended from dinosaurs.</div>
-                    <div role="tabpanel" class="tab-pane" id="rabbits">There are a number of wild rabbits in my back yard.</div>
-                </div>
-
-                <br />
-                <br />
-
-                <P>Here are some navigation pills. They behave like tabs, just with different styling. </P>
-
-                <ul class="nav nav-pills">
-                    <li role="presentation" class="active"><a href="#penguins" aria-controls="penguins" role="tab" data-toggle="tab">Penguins</a></li>
-                    <li role="presentation"><a href="#polarbears" aria-controls="polarbears" role="tab" data-toggle="tab">Polar Bears</a></li>
-                    <li role="presentation"><a href="#seals" aria-controls="seals" role="tab" data-toggle="tab">Seals</a></li>
-                </ul>
-
-                <!-- The tab panes for each pill. Bootstrap's JavaScript uses the attributes of the
-        li elements to display the correct tab panel when a pill is clicked.  -->
-
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="penguins">Black and white flightless birds that are excellent swimmers.</div>
-                    <div role="tabpanel" class="tab-pane" id="polarbears">Polar bears live in the arctic. They can swim for miles.</div>
-                    <div role="tabpanel" class="tab-pane" id="seals">Seals are excellent swimmers too.</div>
-                </div>
-                <br />
-                <br />
-                <h4>Columns</h4>
-
-                <p>Computer Programming</p>
-
-                <!-- Organize parts of page into rows, and columns -->
-
-                <div class="row">
-                    <!--first row -->
-                    <!--Inside the row, create a column-->
-                    <div class="col-sm-6">
-                        <img src="images/mountains-water.jpg" style="width:100%">
-                    </div>  <!-- End of first column -->
-                    <!-- Still inside the row, add a second column -->
-                    <div class="col-sm-6">
-                        <h2>A list of programming languages</h2>
-                        <ul>
-                            <li>Java</li>
-                            <li>C#</li>
-                            <li>Python</li>
-                            <li>Swift</li>
-                            <li>JavaScript</li>
-                        </ul>
-
-                        <pre><code>
-                  print('hello world')
-                  if (1 > 2):
-                    print('math is broken')
-                  </code></pre>
-
-                    </div>   <!-- End of second column -->
-                </div>   <!-- End of row -->
-
-            </div>
-        </div>
+    </div>
 
 </body>
 </html>

@@ -2,9 +2,11 @@
     background-image:url(images/mountains-water.jpg);
     background-size:cover;
     color: white;
+    text-align:center;
+}
+
+.jumbotron h1 {
     text-shadow: 2px 2px black;
-    text-align:center !important;
-    align-content:center;
 }
 
 h4{
